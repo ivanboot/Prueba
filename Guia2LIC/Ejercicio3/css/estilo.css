@@ -1,0 +1,16 @@
+body{
+    background-color: #FFE4C4;
+}
+table{
+    background-color: black;
+    margin-left: 46%;
+    margin-top: 1%;
+}
+tr, td{
+    background-color: #5F9EA0;
+    padding: -10%;
+    font-size: 16px;
+}
+h2{
+    margin-left: 46%;
+}

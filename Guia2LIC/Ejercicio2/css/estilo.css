@@ -1,0 +1,16 @@
+body{
+    background-color: #5F9EA0;
+}
+section{
+    width: 75%;
+    margin-left: 10%;
+    background-color: #FFF8DC;
+    padding: 1%;
+}
+img{
+    width: 50%;
+    height: 70%;
+}
+h1{
+    margin-left: 42%;
+}
