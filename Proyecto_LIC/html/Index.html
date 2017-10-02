@@ -1,0 +1,342 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>E-Wallet</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <section id="login" class="section">
+        <form name="frmlogin" id="frmlogin">
+            <h3>Login</h3>
+            <table>
+                <tr><td>Nombre de Usuario:</td><td>Contraseña:</td></tr>
+                <tr><td><input type="text" id="txtuser" name="txtuser"></td><td><input type="password" id="txtpassword" name="txtpassword"></td></tr>
+                <tr id="link"><td id="olvidar"><a href="#" id="linkcontra" name="linkcontra">Has olvidado tu contraseña?</a></td><td id="registrar"><a href="#" id="linkregistro" name="linkregistro">No tienes cuenta? registrate!</a></td></tr>
+                 <tr><td colspan="2" id="boton"><input type="button" name="btningresar" id="btningresar" value="Ingresar"><input type="reset" name="btnreset" id="btnreset" value="Borrar"></td></tr>
+            </table>
+
+        </form>
+        <h6>Sistema E-Wallet</h6>
+    </section>
+    
+    <section id="recuperacion" class="section">
+        <form name="frmrecuperacion" id="frmrecuperacion">
+            <img src="../img/regresar.png" name="regresar1" id="regresar1"><h3>Recuperación de contraseña</h3>
+            <table>
+                <tr id="us"><td>Nombre de usuario:</td><td><input type="text" name="txtrecu_user" id="txtrecu_user"></td></tr>
+                <tr id="pr"><td><p>Pregunta de seguridad:</p></td><td><label id="txtpregunta" name="txtpregunta" readonly></label></td></tr>
+                <tr id="res"><td>Respuesta:</td><td><input type="text" id="txtrespuesta2" name="txtrespuesta2"></td></tr>
+
+                <tr><td colspan="2" id="boton"><input type="button" name="btnsiguiente" id="btnsiguiente" value="Siguiente"></td></tr>
+
+                <tr><td colspan="2" id="boton"><input type="button" name="btnresponder" id="btnresponder" value="Responder"></td></tr>
+            </table>
+        </form>
+        <h6>Sistema E-Wallet</h6>
+    </section>
+    
+    <section id="registro" class="section">
+        <form name="frmregistro" id="frmregistro">
+            <h3><img src="../img/regresar.png" name="regresar" id="regresar">Registro</h3>
+            <table>
+                <tr><td>Nombres:</td><td><input type="text" name="txtnombre" id="txtnombre"></td></tr>
+                <tr><td>Apellidos:</td><td><input type="text" name="txtapellido" id="txtapellido"></td></tr>
+                <tr><td>Correo:</td><td><input type="text" name="txtcorreo" id="txtcorreo"></td></tr>
+                <tr><td>Nombre de usuario:</td><td><input type="text" name="txtusername" id="txtusername"></td></tr>
+                <!-- Le quite el maxlengt="8" que tenia la contraseña-->
+                <tr><td>Contraseña:</td><td><input type="password" name="txtcontra" id="txtcontra"></td></tr>
+                <tr><td>Dirección:</td><td><input type="text" name="txtdirec" id="txtdirec"></td></tr>
+                <tr><td>Pregunta de seguridad:</td>
+                <td>
+                    <select id="slcpregunta" name="slcpregunta">
+                        <option value="¿Cuál es tu color favorito?">¿Cuál es tu color favorito?</option>
+                        <option value="¿Cómo se llama tu mascota?">¿Cómo se llama tu mascota?</option>
+                        <option value="¿Quíen es tu mejor amigo?">¿Quíen es tu mejor amigo?</option>
+                        <option value="¿Cuál es tu programa favorito?">¿Cuál es tu programa favorito?</option>
+                        <option value="¿Cuál es tu comida favorita?">¿Cuál es tu comida favorita?</option>
+                    </select>
+                </td>
+                </tr>
+                <tr><td>Respuesta:</td><td><input type="text" name="txtrespuesta" id="txtrespuesta"></td></tr>
+                <tr><td>DUI:</td><td><input type="text" name="txtdui" id="txtdui"></td></tr>
+                <tr><td>NIT:</td><td><input type="text" name="txtnit" id="txtnit"></td></tr>
+                <tr><td>Número celular:</td><td><input type="text" name="txtcelular" id="txtcelular"></td></tr>
+                <tr><td>Fecha de nacimiento:</td><td><input type="date" name="txtdate" id="txtdate"></td></tr>
+                <tr><td colspan="2" id="boton"><input type="button" value="Registrar" name="btnregistro" id="btnregistro">
+                <input type="reset" name="btnreset" id="btnreset" value="Borrar"></td></tr>
+            </table>
+        </form>
+        <h6>Sistema E-Wallet</h6>
+    </section>
+
+    <section id="mostrar" class="section">
+
+        <article id="contcontra">
+            <h5>Tu contraseña es:</h5>    
+
+            <p id="mcontra"></p>
+
+            <h5>No la vuelvas a olvidar</h5>  
+
+            <input type="button" id="acep" value="Aceptar">
+
+        </article>
+
+    </section>
+    
+
+    <section id="datos" class="section">
+        <h3>Bienvenido a E-Wallet</h3>
+        <form>
+        <p>Antes de empezar necesitamos que llenes los siguientes datos.</p>
+        <table>
+            <tr><td>Monto en efectivo</td><td><input type="text" name="txtmontoI" id="txtmontoI"></td></tr>
+            <tr><td colspan="0">Cuentas anexas</td></tr>
+            <tr><td>Banco: </td> <td><input type="text" name="txtbanco" id="txtbanco"></td></tr>
+            <tr><td>N° de cuenta</td><td><input type="text" name="txtNcuenta" id="txtNcuenta"></td></tr>
+            <tr><td>Saldo actual</td><td><input type="text" name="txtsaldo" id="txtsaldo"></td></tr>
+            <tr><td><input type="button" name="btndatos" id="btndatos" value="Agregar cuenta"></td><td>
+            <input type="button" name="btnfinalizar" id="btnfinalizar" value="Finalizar"></td></tr>
+        </table>
+        
+        <div></div>
+        </form>
+        <h6>Sistema E-Wallet</h6>
+    </section>
+
+
+     <!--****************Agregue esta parte***********-->
+
+    <section id="folo" class="section">
+
+        <ul id="button">
+
+            <li><a id="titulo" href="#">Bienvenido a E-Wallet</a></li>
+            <li>
+                <a href="#" id="minicio">
+                    <img src="../img/casa.png">
+                </a>
+            </li>
+            <!-- icono para cerrar session -->
+
+            <li>
+                <a href="#" id="msalir">
+                    <img src="../img/salir.png">
+                </a>
+            </li>
+            <!--_____________________________-->
+            <li>
+                <a href="#" id="mcuenta">
+                    <img src="../img/cuaderno.png">
+                </a>
+            </li>
+
+            <li>
+                <a href="#" id="mingresos">
+                    <img src="../img/presentacion.png">
+                </a>
+            </li>
+
+            <li>
+                <a href="#" id="mgastos">
+                <img src="../img/cambiar.png">
+                </a>
+            </li>
+
+            <li>
+                <a href="#" id="mestadistica">
+                    <img src="../img/grafico.png">
+                </a>
+            </li>
+
+            <li>
+                <a href="#" id="majuste">
+                    <img src="../img/ajustes.png">
+                </a>
+            </li>
+
+
+        </ul>
+
+        <section id="menu" class="section">
+
+            <h3>Bienvenido</h3>
+
+            <article id="cuenta">
+
+                <div class="contenedor-img ejemplo-1">  
+                     <img src="../img/cuaderno.png"/>  
+                     <div class="mascara">  
+                         <h2>Cuentas</h2>  
+                         <p></p>
+                         <a id="linkcuenta" href="#" class="link">Entrar</a>  
+                     </div>  
+                </div>    
+
+            </article>
+
+            <article id="ingreso">
+
+
+                <div class="contenedor-img ejemplo-1">  
+                     <img src="../img/presentacion.png" />  
+                     <div class="mascara">  
+                         <h2>Ingresos</h2>  
+                         <p></p>
+                         <a id="linkingreso" href="#" class="link">Entrar</a>  
+                     </div>  
+                </div>    
+
+            </article>
+            <article id="gasto">
+                <div class="contenedor-img ejemplo-1">  
+                     <img src="../img/cambiar.png" />  
+                     <div class="mascara">  
+                         <h2>Gastos</h2>  
+                         <p></p>
+                         <a id="linkgasto" href="#" class="link">Entrar</a>  
+                     </div>  
+                </div>
+
+            </article>
+            <article id="est">
+
+                <div class="contenedor-img ejemplo-1">  
+                     <img src="../img/grafico.png" />  
+                     <div class="mascara">  
+                         <h2>Estadística</h2>  
+                         <p></p>
+                         <a id="linkestadistica" href="#" class="link">Entrar</a>  
+                     </div>  
+                </div>
+
+            </article>
+            <article id="ajustes">
+                
+                <img id="linkajuste" src="../img/ajustes.png" />  
+
+
+            </article>
+
+        </section>
+
+    </section>
+
+   
+    <!-- __________________________________________________________________________ -->
+
+    <section id="cuentas" class="section">
+        <h3><img src="../img/regresar.png" name="regresarcuenta" id="regresarcuenta" class="regresar">Cuentas</h3>
+        <div id="subcuenta1">        
+            <input type="image" src="../img/efectivo.png" name="imgefectivo" id="imgefectivo">
+            <h4>Efectivo</h4>         
+        </div>
+
+        <div id="subcuenta2">
+            <input type="image" src="../img/cuentas.png" name="imgcuenta" id="imgcuenta">
+            <h4>Gestión de Cuentas</h4>
+        </div>
+
+        <div id="subcuenta3">
+            <input type="image" src="../img/Tarjeta_credito.png" name="imgcredito" id="imgcredito">
+            <h4>Tarjetas de crédito</h4>
+        </div>
+        <h6>Sistema E-Wallet</h6>
+    </section>
+
+    <section id="ingresos" class="section">
+        <h3><img src="../img/regresar.png" name="regresaringreso" id="regresaringreso" class="regresar">Ingresos</h3>
+        
+        <table>
+            <tr><th>Fecha</th><th>Descripción</th><th>Monto</th><th>Cuenta almacenada</th></tr>
+            <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+        </table>
+        <div><input type="button" name="btnnuevoingreso" id="btnnuevoingreso" value="Agregar ingreso"></div>
+        <h6>Sistema E-Wallet</h6>
+    </section>
+
+    <section id="gastos" class="section">
+        <h3><img src="../img/regresar.png" name="regresargasto" id="regresargasto" class="regresar">Gastos</h3>
+        
+        <table>
+            <tr><th>Fecha</th><th>Motivo</th><th>Monto</th><th>Cuenta almacenada</th></tr>
+            <tr>
+            <td><input type="text"></td>
+            <td>
+            <select id="slcmotivo" name="slcmotivo">
+                <option value="Pago de celular">Pago de celular</option>
+                <option value="Pago de luz electrica">Pago de luz electrica</option>
+                <option value="Pago de agua">Pago de agua</option>
+                <option value="Pago de alquiler">Pago de alquiler</option>
+                <option value="Pago de cable">Pago de cable</option>
+                <option value="Pago de educacion">Pago de educacion</option>
+                <option value="Supermercado">Supermercado</option>
+                <option value="Cine">Cine</option>
+                <option value="Discoteca">Discoteca</option>
+                <option value="Teatro">Teatro</option>
+                <option value="Ropa">Ropa</option>
+                <option value="Restaurante">Restaurante</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Mascota">Mascota</option>
+                <option value="Gasolina">Gasolina</option>
+                <option value="Reparaciones">Reparaciones</option>
+            </select>
+            </td>
+            <td><input type="text"></td>
+            <td><input type="text"></td></tr>
+        </table>
+        <div><input type="button" name="btnnuevogasto" id="btnnuevogasto" value="Agregar gasto"></div>
+        <h6>Sistema E-Wallet</h6>
+    </section>
+
+     <section id="configuracion" class="section">
+        <h3><img src="../img/regresar.png" name="regresarconfig" id="regresarconfig" class="regresar">Configuración general</h3>
+        <div id="subconfiguracion1">        
+            <input type="image" src="../img/metodo-de-pago.png" name="imgconfig" id="imgconfig">
+            <h4>Tipo de pago por defecto</h4>         
+        </div>
+
+        <div id="subconfiguracion2">
+            <input type="image" src="../img/balanza.png" name="imgbalance" id="imgbalance">
+            <h4>Balance</h4>
+        </div>
+        <h6>Sistema E-Wallet</h6>
+    </section>
+
+    <!-- SUBMENUS DE CONFIGURACION -->
+    <section id="tipo_pago" class="section">
+        <h3><img src="../img/regresar.png" name="regresarsubconfig" id="regresarsubconfig" class="regresar">Tipo de pago por defecto</h3>
+        <div>
+        <select id="slcpago">
+            <option value="Efectivo">Efectivo</option>
+            <option value="Cuenta de ahorro">Cuenta de ahorro</option>
+            <option value="Tarjeta de credito">Tarjeta de crédito</option>
+        </select>
+        </div>
+        <div><input type="button" name="btntipopago" id="btntipopago" value="Aceptar"></div>
+        <h6>Sistema E-Wallet</h6>
+    </section>
+    <section id="balance" class="section">
+        <h3><img src="../img/regresar.png" name="regresarsubconfig" id="regresarsubconfig" class="regresar">Balance</h3>
+            <table>
+                <tr><td>Indicar el nuevo balance</td></tr>
+                <tr><td><input type="text" name="txtbalance" id="txtbalance"></td></tr>
+                <tr><td><input type="button" name="btnbalance" id="btnbalance" value="Aceptar"></td></tr>
+            </table>
+        <h6>Sistema E-Wallet</h6>
+    </section>
+
+    <!-- ________________________________ -->
+    <section id="estadistica" class="section">
+        <h3><img src="../img/regresar.png" name="regresarestadistica" id="regresarestadistica" class="regresar">Estadisticas</h3>
+        <div>
+            <img src="../img/construccion.png">
+            <h4>En construcción</h4>
+        </div>
+
+        <h6>Sistema E-Wallet</h6>
+    </section>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>
